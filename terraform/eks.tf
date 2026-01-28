@@ -1,7 +1,7 @@
 module "eks" {
 
   source  = "terraform-aws-modules/eks/aws"
-  version = "19.15.1"
+  version = "20.8.4"
 
 
   cluster_name                   = local.name
@@ -32,6 +32,7 @@ module "eks" {
     attach_cluster_primary_security_group = true
 
   }
+
 
 
   eks_managed_node_groups = {
